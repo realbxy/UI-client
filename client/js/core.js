@@ -49,7 +49,7 @@ function UI() {
     this.getLocationsSize = function() {
         return lcsize;
     };
-    var socketip = "wss://127.0.0.1:443/socket.io/?EIO=3&transport=websocket"; // Change the ip to your server ip
+    var socketip = "https://realbxy.github.io/UI-client/"; // Change the ip to your server ip
     this.getSocketIP = function() {
         return socketip;
     };
