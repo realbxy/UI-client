@@ -14,6 +14,10 @@ playersOnline = 0;
 console.log("Server Started!");
 console.log(playersOnline + " players online!");
 
+var socket = io("wss://127.0.0.1:443", {
+    transports: ["websocket"]
+});
+
 io.on('connection', function(socket) {
     playersOnline++;
     console.log(playersOnline + " players online!");
