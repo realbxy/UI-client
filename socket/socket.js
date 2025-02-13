@@ -7,7 +7,7 @@ var io = require('socket.io')(443);
 var id = 0;
 
 var connectedOrigins = [];
-var allowedOrigin = "example.com"; // Your website domain
+var allowedOrigin = "https://realbxy.github.io"; // Your website domain
 var fs = require('fs'); 
 
 playersOnline = 0;
