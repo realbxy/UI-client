@@ -2139,7 +2139,6 @@ if (! function(factory) {
             var video = theta2.find(".minicolors-opacity-slider");
             var dragHelper = slider.find("[class$=-picker]");
             var elem = grid.find("[class$=-picker]");
-            var $canvas = video.find("[class$=-picker]");
             switch (_forEach(input.val()) ? (col = parseTime(input.val()), end = width(parseFloat(attr(input.val())).toFixed(2), 0, 1), end && input.attr("data-opacity", end)) : col = convertCase(extend(input.val(), true), settings.letterCase), col || (col = convertCase(parseHex(settings.defaultValue, true), settings.letterCase)), hsb = RGBToHSB(col), p = settings.keywords ? $.map(settings.keywords.split(","), function(m3) {
                 return $.trim(m3.toLowerCase());
             }) : [], hex = "" !== input.val() && -1 < $.inArray(input.val().toLowerCase(), p) ? convertCase(input.val()) : _forEach(input.val()) ? find(input.val()) : col, recurring || input.val(hex), settings.opacity && (value = "" === input.attr("data-opacity") ? 1 : width(parseFloat(input.attr("data-opacity")).toFixed(2), 0, 1), isNaN(value) && (value = 1), input.attr("data-opacity", value), component.find("span").css("opacity", value), height = width(video.height() - video.height() * value, 0, video.height()),
