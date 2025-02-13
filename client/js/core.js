@@ -1,3 +1,12 @@
+const socket = io('wss://127.0.0.1:443', {
+  path: '/socket.io/',
+  transports: ['websocket']
+});
+
+socket.on('connect', () => {
+  console.log('Connected to the WebSocket server');
+});
+
 function UI() {
     function enter() {
         return $("#nick").val(UI.getName()), nodeList[0][1] == UI.getName() ? false : (nodeList[0][1] = UI.getName(), setLocalStorage("nick", $("#nick").val()), player_profile[selected_profile].name = UI.getName(), data(), true);
