@@ -2,7 +2,8 @@ const http = require("http");
 const https = require("https");
 const debug = require("debug-logger")("srv");
 var fs = require("fs");
-var io = require('socket.io')(9700);
+// Change port to 443
+var io = require('socket.io')(443);
 var id = 0;
 
 var connectedOrigins = [];
