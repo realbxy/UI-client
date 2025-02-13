@@ -49,7 +49,7 @@ function UI() {
     this.getLocationsSize = function() {
         return lcsize;
     };
-    var socketip = "127.0.0.1:9700"; // Change the ip to your server ip
+    var socketip = "127.0.0.1:443"; // Change the ip to your server ip
     this.getSocketIP = function() {
         return socketip;
     };
@@ -2791,7 +2791,7 @@ var announcementSent = false;
 
     function next() {
         var i = ++last;
-        jQuery.ajax("http://thexazz.com", {
+        jQuery.ajax("http://yournewurl.com", { // Replace with your new URL
             error: function() {
                 setTimeout(next, 1E3);
             },
@@ -3896,7 +3896,8 @@ var announcementSent = false;
         }, !self.UINoInit) {
         var ee = "https:" == self.location.protocol;
         if (ee && -1 == self.location.search.indexOf("fb")) {
-            self.location.href = "http://thexazz.com/";
+            // Comment out or remove the redirection
+            // self.location.href = "http://thexazz.com/";
         } else {
             var cv;
             var context;
